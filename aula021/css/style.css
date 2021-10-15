@@ -58,7 +58,15 @@ input{
     margin: 30px auto 5px 10px;
 }
 select{
-    width: 150px;
+    width: 169px;
+}
+
+select option{
+    padding: 2px 0 2px 5px;
+}
+
+#resultado-final p{
+    margin-bottom: 10px;
 }
 
 footer{
