@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #area, #area2{
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font: normal 20px arial;
+            display: flex;/*alinhando o texto no eixo y e x*/
+            justify-content: center;/*alinhando o texto no eixo y e x*/
+            align-items: center;/*alinhando o texto no eixo y e x*/
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>-->
+
+    <div id="area2" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+    <script>
+        /*
+        //criando os eventos no html 
+        var divArea = document.getElementById('area')
+        function clicar(){
+            divArea.innerText = 'clicou'
+            divArea.style.background = 'red'
+        }
+
+        function entrar(){
+            divArea.innerText = 'entrou'
+            divArea.style.background = 'green'
+        }
+
+        function sair(){
+            divArea.innerText = 'saiu'
+            divArea.style.background = 'blue'
+        }
+        */
+
+        //criando eventos dentro do próprio js a partir dos 'ouvidores' (listener)
+        //parâmetros ('type', listener(nome da função))
+        var divArea = document.getElementById('area2')
+        divArea.addEventListener('click', clicar)
+        divArea.addEventListener('mouseenter', entrar)
+        divArea.addEventListener('mouseout', sair)
+
+        function clicar(){
+            divArea.innerText = 'clicou'
+            divArea.style.background = 'red'
+        }
+
+        function entrar(){
+            divArea.innerText = 'entrou'
+            divArea.style.background = 'green'
+        }
+
+        function sair(){
+            divArea.innerText = 'saiu'
+            divArea.style.background = 'blue'
+        }
+    </script>
+</body>
+
+</html>

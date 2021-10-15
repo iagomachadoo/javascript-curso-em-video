@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Verificador de Idade</h1>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <div>
+                <label for="ano-nascimento">Ano de nascimento:</label>
+
+                <input type="number" name="ano-nascimento" id="ano-nascimento" required>
+
+                <p>
+                    Sexo:
+                    <label for="masculino" id="masc">Masculino</label>
+
+                    <input type="radio" name="input-sexo" id="masculino" required>
+
+                    <label for="feminino" id="fem">Feminino</label>
+
+                    <input type="radio" name="input-sexo" id="feminino" required>
+                </p>
+
+                <p id="btn">
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+    
+            </div>
+
+            <div id="resposta"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Iago Machado
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

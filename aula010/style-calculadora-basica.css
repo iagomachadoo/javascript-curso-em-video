@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    text-align: center;
+}
+
+#container{
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    border-radius: 20px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.300);
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0.600);
+    border-radius: 20px 20px 0 0;
+}
+
+#numeros{
+    height: 110px;
+    margin: auto;
+}
+
+#n1{
+    margin: 50px auto 20px auto;
+    text-align: center;  
+}
+
+#n2{
+    margin: 20px auto;
+    text-align: center;
+}
+
+input{
+    width: 50px;
+    text-align: center;
+}
+
+button{
+    margin: 15px auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.1em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.100);
+}
+
+#calcular:hover, #zerar:hover{
+    background-color: lightblue;
+    
+}
+
+#resposta{
+    text-align: center;
+    margin: 15px auto 0 auto;
+    font-size: 1.2em;
+    height: 40px;
+}
+
+#resposta p{
+    background-color: rgb(0, 0, 143);
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zerar{
+    margin: 25px auto;
+}

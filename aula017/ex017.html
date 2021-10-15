@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>
+            Vamos Contar
+        </h1>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <div>
+                <p class="informacao">
+                    <label for="inicio">Início:</label>
+                    <input type="number" name="inicio" id="inicio" required>
+                </p>
+    
+                <p class="informacao">
+                    <label for="fim">Fim:</label>
+                    <input type="number" name="fim" id="fim" required>
+                </p>
+
+                <p class="informacao">
+                    <label for="passo">Passo:</label>
+                    <input type="number" name="passo" id="passo" required>
+                </p>
+
+                <p id="btn">
+                    <input type="button" value="Contar" onclick="contar()">
+                </p>
+    
+            </div>
+
+            <div id="resposta">Preparando a contagem ...</div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Iago Machado
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

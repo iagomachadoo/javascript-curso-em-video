@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora básica</title>
+    <link rel="stylesheet" href="style-calculadora-basica.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <header>
+
+            <div id="titulo">
+
+                <h1>
+                    Calculadora Básica
+                </h1>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div id="numeros">
+
+                <div id="n1">
+
+                    <label for="numero1">Digite um número</label>
+
+                    <input type="number" name="numero1" id="numero1">
+
+                </div>
+
+                <div id="caixa-operador">
+
+                    <label for="operador">Digite o operador</label>
+
+                    <input type="text" name="operador" id="operador">
+
+                </div>
+                
+                <div id="n2">
+
+                    <label for="numero2">Digite outro número</label>
+
+                    <input type="number" name="numero2" id="numero2">
+
+                </div>
+
+            </div>
+            
+            <button id="calcular" onclick="resultado()">Resultado</button>
+
+            <div id="resposta"></div>
+
+            <button id="zerar" onclick="limpaCampo()">Zerar</button>
+
+        </main>
+
+    </div>
+
+    <script src="script-calculadora-basica.js"></script>
+</body>
+</html>

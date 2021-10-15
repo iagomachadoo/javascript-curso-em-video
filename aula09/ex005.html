@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+            font: normal 18px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resulado</p>
+    <p>Aprendendo a usar a <strong>DOM</strong> em JavaScript.</p>
+    <div id='msg'>Clica em mim</div>
+    <script>
+
+        var elementoParagrafo1 = document.getElementsByTagName('p')[1]
+
+        /*
+        var elementoParagrafo = window.document.getElementsByTagName('p')//o método window pode ser omitido. Nesse caso, o comando vai pegar todos os elementos <p>
+        */
+
+        /*
+        var elementoParagrafo1 = document.getElementsByTagName('p')[0]//nesse caso vai pegar o primeiro elemento <p>
+        document.write('Está escrito assim: ' + elementoParagrafo1.innerHTML)//o método .write serve para escrever algo na tela. O método .innerHTML serve para inserir algo dentro do html.
+        */
+
+        /*
+        var elementoParagrafo1 = document.getElementsByTagName('p')[0]
+        elementoParagrafo1.style.color = 'red'//aqui estou mudando o estilo do primeiro parágrafo
+        */
+
+        /*
+        var corpo = document.body
+        corpo.style.background = "blue"//mudando a cor do body da página. Nesse caso não é pra usar o método getElementsByTagName
+        */
+
+        /*
+        document.write(elementoParagrafo1.innerText)//o método innerText pega somente o texto sem a formatação
+        */
+
+        /*
+        document.write(elementoParagrafo1.innerHTML)//o método innerHTML pega o texto e a formatação
+        */
+
+        /*
+        var elementoParagrafo2 = document.getElementsByTagName('p')[1]//nesse caso vai pegar o segundo elemento <p>
+        */
+
+        /*
+        var strong = document.getElementsByTagName('strong')[0]//toda vez que o método getElementsByTagName for usado, é necessário passar o índice, mesmo que só tenha um elemento
+        strong.style.color = 'red'
+        */
+
+        /*
+        var div = document.getElementById('msg')
+        div.style.background = 'green'
+        div.innerText = 'Modificações feitas via js.'
+        */
+
+        /*
+        var div = document.querySelector('div#msg')
+        div.style.background = 'red'
+        div.style.color = 'black'
+        div.style.padding = '20px'
+        div.style.textAlign = 'center'//para usar propriedade com mais de uma palavra, é necessário usar o camelcase
+        */
+    </script>
+</body>
+</html>

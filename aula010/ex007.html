@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            text-align: center;
+        }
+
+        #container{
+            background-color: white;
+            width: 600px;
+            height: 400px;
+            margin: 100px auto;
+            border-radius: 20px;
+            box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.300);
+        }
+
+        #titulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            height: 50px;
+            background-color: rgba(0, 0, 255, 0.600);
+            border-radius: 20px 20px 0 0;
+        }
+
+        #numeros{
+            height: 110px;
+            margin: auto;
+        }
+
+        #n1{
+            margin: 50px auto 20px auto;
+            text-align: center;  
+        }
+
+        #n2{
+            margin: 30px auto 20px auto;
+            text-align: center;
+        }
+
+        input{
+            width: 50px;
+            text-align: center;
+        }
+
+        button{
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid black;
+            font-size: 1.1em;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.100);
+        }
+
+        #resultado{
+            text-align: center;
+            margin: 40px auto 0 auto;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="titulo">
+                <h1>
+                    Somando valores
+                </h1>
+            </div>
+        </header>
+        <main>
+            <div id="numeros">
+                <div id="n1">
+                    <label for="numero1">Digite um número</label>
+                    <input type="number" name="numero1" id="numero1">
+                </div>
+                
+                <div id="n2">
+                    <label for="numero2">Digite outro número</label>
+                    <input type="number" name="numero2" id="numero2">
+                </div>
+            </div>
+            
+            <button type="submit" onclick="somar()">Somar</button>
+            <div id="resultado"></div>
+        </main>
+    </div>
+
+    <script>
+        function somar(){
+            var numero1 = document.getElementById('numero1');
+            var numero2 = document.querySelector('input#numero2');
+            var valorNumero1 = Number(numero1.value)
+            var valorNumero2 = Number(numero2.value)
+            var soma = valorNumero1 + valorNumero2
+
+            var divResultado = document.getElementById('resultado');
+            divResultado.innerHTML = `A soma entre ${valorNumero1} e ${valorNumero2} é igual a <strong>${soma}</strong>`
+        }
+    </script>
+</body>
+</html>
